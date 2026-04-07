@@ -80,8 +80,8 @@ public:
 
     explicit SpeedCircularLinkedList(std::vector<int> node_bounds) {
         list_size = node_bounds.size();
-        fast_search_list_size = log2(list_size);
         if (list_size == 0) return;
+        fast_search_list_size = log2(list_size);
 
         head = new Node(node_bounds[0], fast_search_list_size);
         Node* curr = head;
@@ -95,7 +95,6 @@ public:
     }
 
     ~SpeedCircularLinkedList() {
-        if (list_size == 0) return;
         Node* curr = head;
         for (int i = 0; i < list_size; ++i) {
             Node* next = curr->next;
@@ -106,7 +105,6 @@ public:
 
     void put(std::string str, T value) {
 	    int code = GetHashCode(str);
-        if (list_size == 0) return; 
         
         if (code <= head->bound) {
             head->kv_map[str] = value;
@@ -155,7 +153,6 @@ public:
     }
 
     void print() {
-        if (list_size == 0) return;
         Node* curr = head;
         for (int i = 0; i < list_size; ++i) {
             std::cout << "[Node] Bound = " << curr->bound << ", kv_map_size = " << curr->kv_map.size() << "\n";
