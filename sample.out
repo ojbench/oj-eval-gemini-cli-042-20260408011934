@@ -1,0 +1,28 @@
+======== Constructor Test ========
+[Node] Bound = 10, kv_map_size = 0
+[Node] Bound = 20, kv_map_size = 0
+[Node] Bound = 30, kv_map_size = 0
+[Node] Bound = 40, kv_map_size = 0
+[Node] Bound = 50, kv_map_size = 0
+[Node] Bound = 60, kv_map_size = 0
+[Node] Bound = 70, kv_map_size = 0
+[Node] Bound = 80, kv_map_size = 0
+[Node] Bound = 90, kv_map_size = 0
+[Node] Bound = 97, kv_map_size = 0
+============ Size Test ============
+size = 5
+============ Put Test ============
+[Node] Bound = 10, kv_map_size = 0
+[Node] Bound = 30, kv_map_size = 0
+[Node] Bound = 50, kv_map_size = 1
+[Node] Bound = 70, kv_map_size = 0
+[Node] Bound = 90, kv_map_size = 0
+[Node] Bound = 110, kv_map_size = 0
+[Node] Bound = 130, kv_map_size = 0
+[Node] Bound = 150, kv_map_size = 2
+[Node] Bound = 170, kv_map_size = 0
+[Node] Bound = 197, kv_map_size = 0
+=========== Get Test =============
+12:15
+14:42
+07:50
